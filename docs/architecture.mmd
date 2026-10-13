@@ -1,0 +1,7 @@
+flowchart LR
+    A[User Input] --> B[FastAPI Service]
+    B --> C[Refine Prompt]
+    C --> D{Check History & Length}
+    D -->|Adjust Confidence| E[Generate Suggestions]
+    E --> F[Return Structured Output]
+    F --> G[Execution Result]
